@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn {
+    width: 15rem;
+    background: white;
+    color: #b83d5e;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #b83d5e;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.home .navbar .logo a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navbar {
+    height: 5rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar .navbar-items ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navbar .navbar-items ul li {
+    margin: 0 1rem;
+}
+
+.navbar .navbar-items ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.home {
+    background-image: linear-gradient(45deg, #b83d5e80, transparent, transparent), url("mikkel-bech-yjAFnkLtKY0-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.home .container {
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.home .container h1 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+}
+
+.home .container p {
+    font-size: 20px;
+}
+
+.items {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 0;
+    left: 0;
+}
+
+.items ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+.items ul li {
+    margin: 1rem .5rem;
+}
+
+.navbar-items ul li a {
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.items ul li a {
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.navbar-items ul li a::before {
+    content: '';
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid #b83d5e;
+    transition: .3s linear;
+}
+
+.navbar .navbar-items ul li a:hover::before {
+    width: 100%;
+}
+
+.items ul li a:hover {
+    background: #b83d5e;
+    color: white;
+}
+
+.btn:hover {
+    background-color: #b83d5e;
+    color: white;
+}

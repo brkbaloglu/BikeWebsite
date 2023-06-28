@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.btn {
+    width: 15rem;
+    background: white;
+    color: #b83d5e;
+    padding: 1rem;
+    font-size: 20px;
+    font-weight: 600;
+    border: 1px solid #b83d5e;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin: 1rem 0;
+    text-decoration: none;
+    text-align: center;
+}
+
+.btn:hover {
+    background-color: #b83d5e;
+    color: white;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.navbar {
+    height: 5rem;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    background: black;
+    justify-content: space-around;
+}
+
+.navbar .navbar-items ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.navbar .navbar-items ul li {
+    margin: 0 1rem;
+}
+
+.navbar .navbar-items ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.navbar-items ul li a {
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.items ul li a {
+    color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.navbar-items ul li a::before {
+    content: '';
+    top: 0%;
+    left: 0%;
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid #b83d5e;
+    transition: .3s linear;
+}
+
+.navbar .navbar-items ul li a:hover::before {
+    width: 100%;
+}
+
+.home .image {
+    background-image: url(img/1.jpg);
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home .container {
+    color: white;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.heading {
+    font-size: 40px;
+    margin-bottom: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.heading .heading-mark {
+    color: #b83d5e;
+}
+
+.home .container p {
+    font-size: 16px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 3rem 5rem;
+}
+
+.about img {
+    width: 600px;
+    height: 700px;
+}
+
+.about .text {
+    margin: 3rem 5rem;
+    text-align: center;
+    color: white;
+}
+
+.products {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.products .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products .container .box {
+    margin: 3rem 2rem;
+    text-align: center;
+    color: white;
+}
+
+.gallery {
+    max-width: 90%;
+    margin: 20px auto;
+}
+
+.gallery .images {
+    columns: 4 300px;
+    gap: 20px;
+}
+
+.gallery .images img {
+    margin-bottom: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact {
+    background: #b83d5e;
+    padding: 1rem;
+}
+
+.contact .heading .heading-mark {
+    color: white;
+}
+
+.contact form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+.contact form input {
+    width: 40%;
+    margin: .5rem 0;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.contact form textarea {
+    width: 40%;
+    margin: .5rem 0;
+    padding: 1rem;
+    resize: none;
+    border-radius: 1rem;
+}
+
+.contact form button {
+    border: 2px solid white;
+}
+
+::placeholder {
+    color: #b83d5e;
+}
+
+.social-media-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.social-media-icons a {
+    margin: 0 .5rem;
+    font-size: 30px;
+    color: white;
+    padding: .75rem;
+    border-radius: 1rem;
+}
+
+.social-media-icons a:hover {
+    background: #b83d5e;
+    color: white;
+}
